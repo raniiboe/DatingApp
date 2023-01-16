@@ -47,6 +47,7 @@ export class MemberListComponent implements OnInit {
   }
 
   resetFilters() {
+      console.log("reset")
       this.userParams = this.memberService.resetUserParams();
       this.loadMembers();
   }
